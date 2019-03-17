@@ -1,0 +1,185 @@
+// color
+@red: rgb(211, 29, 29);
+@darkred: rgb(209, 34, 34);
+@yellow: rgba(244, 247, 2, 0.8);
+@orange: rgba(228, 146, 16, 0.8);
+@pink: rgba(235, 99, 233, 0.8);
+@green: rgba(120, 224, 84, 0.8);
+@darknesblue: rgba(14, 32, 37, 1);
+@darkblue: rgba(48, 113, 131, 1);
+@blue: rgba(10, 49, 58, 0.9);
+@lightblue: #ccffff;
+@grey: #bccbcf;
+body {
+	background: @grey;
+}
+// .hidden {
+// 	display: none;
+// }
+p {
+	width: 300px;
+	font-size: 16px;
+	color: @lightblue;
+	background: @blue;
+	border-radius: 5px;
+}
+.error {
+	color: @darkred;
+	font-size: 16px;
+	font-weight: bold;
+}
+.center {
+	margin: 0 auto;
+	text-align: center;
+}
+.container {
+	min-width: 1200px;
+	background: url('../img/main.jpg') no-repeat;
+	height: 728px;
+}
+.header {
+	display: flex;
+	justify-content: flex-end;
+	padding: 15px;
+}
+.navbar {
+	border: 2px solid @lightblue;
+	border-radius: 15px;
+	a {
+		padding: 0 15px;
+		font-size: 14pt;
+		font-weight: 700;
+		text-decoration: none;
+		color: @lightblue;
+
+		&:first-child {
+			margin-right: 20px;
+		}
+		&:hover {
+			color: @darkblue;
+		}
+	}
+}
+.h170 {
+	position: relative;
+	height: 170px;
+	z-index: 2;
+	.success {
+		width: 300px;
+		height: 30px;
+		margin: 0 auto;
+		padding: 3px 30px;
+		display: none;
+		font-size: 16px;
+		color: @lightblue;
+		background: @darknesblue;
+		border-radius: 10px;
+	}
+}
+.h45 {
+	height: 45px;
+}
+.h90 {
+	height: 90px;
+}
+.h120 {
+	position: absolute;
+	z-index: 1;
+	height: 120px;
+}
+.cross {
+	cursor: pointer;
+	background: #fff;
+	margin: 10px 280px;
+	&:hover {
+	  background: @grey;
+	};
+}
+// Форма регистрации
+.reg {
+	font-size: 12px;
+	display: none;
+	position: relative;
+	left: 470px;
+	top: 100px;
+	width: 300px;
+	background: @darknesblue;
+	margin: auto;
+	border-radius: 5px;
+	form { 
+		padding: 10px 0 0 40px; 
+	}
+	p {
+		font-size: 16px;
+		color: @lightblue;
+		background: none;
+	}
+	input {
+		height: 20px;
+		width: 220px;
+		margin-bottom: 5px;
+		padding: 3px 5px;
+		border-radius: 5px;
+	}
+	input[type='submit'] {
+		margin: 5px 0 10px 140px;
+		width: 80px;
+		height: 25px;
+		padding: 0;
+	}
+}
+.time {
+	margin-bottom: 15px;
+}
+.city {
+	text-transform: uppercase;
+	font-size: 16pt;
+	font-weight: 700;
+	text-align: center;
+	border-radius: 15px;
+	height: 45px;
+	padding: 3px 10px;
+	color: #fff;
+}
+.new-york {
+	border: 3px solid @yellow;
+	background: @yellow;
+	width: 410px;
+	margin-left: 40px;
+}
+.london {
+	border: 3px solid @orange;
+	background: @orange;
+	width: 400px;
+	margin-left: 50px;
+}
+.tokio {
+	border: 3px solid @pink;
+	background: @pink;
+	width: 445px;
+	margin-left: 75px;
+}
+.sydney {
+	border: 3px solid @green;
+	background: @green;
+	width: 312px;
+	margin-left: 10px;
+}
+.red {
+	color: @red;
+}
+table {
+	word-wrap: break-word;
+	margin: 0 auto;
+	tr {
+		background: @darknesblue;
+		color: @lightblue;
+	}
+	td {
+		padding: 3px 13px;
+		border-right: 1px solid @lightblue;
+		&:last-child {
+			border: none;
+		}
+	}
+}
